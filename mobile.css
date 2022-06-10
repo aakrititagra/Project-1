@@ -1,0 +1,142 @@
+/* #homebox .box{
+   display: block;
+   width:50%;
+   
+} */
+#home {
+  /* height: 90vh; */
+  padding: 6rem;
+}
+
+#homebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-left: 5.5rem; */
+}
+
+.box {
+  width: 90%;
+  padding: 1rem;
+  margin: 0.5rem 0.5rem;
+  /* flex: 100%; */
+  display: flex;
+}
+.box p {
+  display: inline;
+  margin: auto 0.625rem;
+  /* text-align: center;
+    justify-content: center; */
+}
+
+#hometext {
+  width: 60%;
+}
+
+#world {
+  overflow: hidden;
+  display: block;
+  /* flex-direction: column; */
+  /* height: 100vh;
+    width: 100vw; */
+  /* justify-content: center; */
+  padding: 0.625rem;
+}
+
+#world2 {
+  /* width: fit-content; */
+  /* text-align: center; */
+  display: block;
+  overflow: hidden;
+}
+
+.testimonialbox2,
+.testimonialbox3 {
+  display: none;
+}
+
+form textarea {
+  height: 6em;
+  width: 19em;
+}
+form input{
+  margin-right: 0.625rem;
+  border-radius: 0.25rem;
+  height: 1.875rem;
+  width: 18.625rem;
+}
+#main-footer {
+  padding: 2rem;
+  flex-direction: column;
+}
+
+#main-footer div {
+  margin: 1rem;
+}
+
+#company-logo {
+  text-align: center;
+  padding-left: 1.875rem;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  /* background-color: #333; */
+  /* color: #fff; */
+  background-color: rgb(24, 23, 23);
+
+  width: 100%;
+}
+#getintouch {
+  display: block;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(0.5rem) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-0.5rem) rotate(-45deg);
+}
+
+.navdata {
+  position: fixed;
+  left: -100%;
+  top: 3.75rem;
+  gap: 0;
+  flex-direction: column;
+  background-color: rgb(24, 23, 23);
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.navdata li {
+  padding: 0.625rem;
+}
+
+.navdata.active {
+  left: 0;
+}
+
+.navdata ul li {
+  margin: 1rem 0;
+}
+
+#navbar button {
+  display: none;
+}
+
+/* .navdata :nth-last-child(5)
+{
+    display: none;
+}  */

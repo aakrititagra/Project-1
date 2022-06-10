@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
+}
+
+/* Navbar Styling */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(24, 23, 23);
+  align-items: center;
+  height: 3.75rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  vertical-align: middle;
+}
+
+#navbar div {
+  margin: 0.625rem;
+  padding: 0.625rem;
+}
+
+#getintouch {
+  display: none;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbar ul li a {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  color: #847c78;
+  text-decoration: none;
+}
+
+.navdata {
+  /* justify-content: flex-end; */
+  margin-right: 0;
+  float: right;
+}
+
+/* .navdata li a :active{
+  background-color: white;
+  color: #ee3c00;
+} */
+
+.navdata a.active {
+  background-color: white;
+  color: #ee3c00;
+}
+.navdata li a:hover {
+  color: #fefefe;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 1.5625rem;
+  height: 0.1875rem;
+  margin: 0.3125rem auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+#info {
+  background-color: #ee3c00;
+  border-radius: 1.875rem;
+  padding: 0.5rem 0.25rem;
+  margin: 0.25rem;
+  margin-top: 0;
+   width: 8rem;
+  height: 2.1875rem;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* HomePage Styling */
+
+#home {
+  background: url("./img/intro-image.jpg") no-repeat center center/cover;
+  height: 74.8vh;
+  padding: 6.25rem;
+}
+#hometext {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+#homebox {
+  display: flex;
+  justify-content: center;
+  border-radius: 10%;
+}
+.box {
+  border: #7a7974 0.0469rem solid;
+  width: fit-content;
+  padding: 3.5rem;
+  margin: 0.625rem;
+  text-align: center;
+  color: #fefefe;
+}
+
+#hometext {
+  color: #fefefe;
+  font-size: large;
+}
+
+/* World Styling */
+#world {
+  /* height: 45vh; */
+  padding: 4.375rem 4.375rem;
+  display: flex;
+}
+
+#worldl h2 {
+  margin-bottom: 0.625rem;
+}
+
+/* Testimonial Styles */
+#testimonials {
+  background: #f7f7f7;
+  padding: 5.25rem 4rem;
+}
+#testimonials h2 {
+  text-align: center;
+}
+.text-testimonial {
+  border: 0.0625rem solid rgb(87, 53, 53);
+  padding: 2.8125rem;
+  border-radius: 1.25rem;
+  background-color: white;
+  position: relative;
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.56);
+  z-index: 0;
+}
+
+.text-testimonial::after {
+  top: 100%;
+  left: 10%;
+  border: 1px solid transparent;
+  content: "";
+  position: absolute;
+  border-top-color: #fff;
+  border-width: 15px;
+  margin-left: 25px;
+  z-index: 0;
+}
+#testbox {
+  display: flex;
+  margin: 0.625rem;
+}
+.testimonialbox1,
+.testimonialbox2,
+.testimonialbox3 {
+  margin: 10px;
+}
+
+/* Contact Us Styling */
+#contact-us {
+  background: url("./img/contact-section-bg.png") no-repeat center center/cover;
+  padding: 3.75rem;
+  height: 40vh;
+  /* filter: grayscale(100%); */
+}
+/* .form-group{
+    display: inline-block ;
+} */
+
+#contact-text {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+form input {
+  margin-right: 0.625rem;
+  border: none;
+  border-radius: 0.25rem;
+  height: 1.875rem;
+  width: 15.625rem;
+}
+form input:nth-last-child() {
+  border: none;
+  border-radius: 0.25rem;
+  height: 1.875rem;
+  width: 15.625rem;
+}
+
+form textarea {
+  border: none;
+  border-radius: 0.25rem;
+  /* height: 1.875rem;
+    width: 15.625rem; */
+}
+
+#contactform {
+  text-align: center;
+}
+#contactform input {
+  margin-bottom: 10px;
+}
+.submit {
+  background-color: #ee3c00;
+  border-radius: 1.875rem;
+  padding: 0.5rem 0.25rem;
+  width: 8.5rem;
+  height: fit-content;
+  border: none;
+  color: #f7f7f7;
+  margin-top: 0.5rem;
+}
+
+/* Footer Styling */
+#main-footer {
+  background: rgb(22, 22, 22);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1.5625rem;
+}
